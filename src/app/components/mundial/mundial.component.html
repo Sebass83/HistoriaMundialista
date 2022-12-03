@@ -1,0 +1,44 @@
+<div class="mundial-container">
+  <div class="anfitrion" [id]="anfitrion[0].idmundial">
+    <h1>{{ anfitrion[0].anfitrion }} - {{ anfitrion[0].anio }}</h1><a routerLink="/mundial/" class="home">🏠</a>
+  </div>
+  <div class="introduccion">{{ introduccion[0].introduccion }}</div>
+
+  <div class="equipo-container">
+    <h2>Equipos Participantes</h2>
+    <div *ngFor="let equipo of equipos" class="equipo">{{ equipo?.pais }}</div>
+  </div>
+  
+  <div class="grupos" *ngIf="id != 2 && id !=3">
+    <h2>Division por grupos</h2>
+    <div *ngFor="let grupo of grupos" class="grupo">
+      {{ grupo?.grupo }} - {{ grupo?.pais }}
+    </div>
+  </div>
+
+  <div class="sedes">
+    <h2>Sedes donde se deisputaron el mundial</h2>
+    <div *ngFor="let sede of sedes" class="sede">
+      {{ sede?.lugar }} 🏟️ {{ sede?.estadio }}
+    </div>
+  </div>
+
+  <div class="podios">
+    <div *ngFor="let podio of podios" class="podios-container">
+      <div class="posicion">
+        🏆 {{ podio?.puesto }}
+        <div class="pais">{{ podio?.pais }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="goleadores">
+    <h2>Goleadores del torneo</h2>
+    <div *ngFor="let goleador of goleadores" class="goleador">
+      {{ goleador?.jugador }} - {{ goleador?.seleccion }} - Goles:
+      {{ goleador?.goles }}
+    </div>
+  </div>
+
+
+</div>

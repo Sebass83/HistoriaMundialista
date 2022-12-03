@@ -1,0 +1,221 @@
+.mundial-container {
+  box-sizing: border-box;
+  display: grid;
+  background-color: cadetblue;
+  padding-top: 40px;
+  max-width: 100vw;
+
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.anfitrion {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  width: 100%;
+  max-width: 80vw;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.home {
+  font-size: 1.5rem;
+  align-items: flex-end;
+  width: 20%;
+}
+
+.introduccion {
+  background-color: bisque;
+  width: 90%;
+  padding: 1.6rem;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+}
+.equipo-container {
+  background-color: bisque;
+  width: 90%;
+  padding: 1.6rem;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  display: grid;
+  grid: auto-flow / 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.equipo {
+  padding: 20px 40px;
+  margin-bottom: 30px;
+}
+
+.sedes {
+  display: grid;
+  grid: auto-flow / 1fr 1fr 1fr 1fr;
+  background-color: bisque;
+  width: 90%;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+  padding: 1.6rem;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+  
+}
+
+.sede {
+  padding: 20px;
+}
+
+.podios {
+  display: flex;
+  flex-direction: row;
+}
+
+.podios-container {
+  width: 15rem;
+  height: 15rem;
+  background-color: bisque;
+  margin: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.pais {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.goleadores {
+  display: grid;
+  grid: auto-flow / 1fr 1fr 1fr 1fr;
+  background-color: bisque;
+  align-items: center;
+  justify-items: center;
+  padding: 1.6rem;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+
+.goleador {
+  padding: 20px;
+}
+
+.grupos {
+  background-color: bisque;
+  width: 90%;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1.6rem;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+a {
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 960px) {
+  .anfitrion {
+    max-width: 100vw;
+  }
+  .goleadores {
+    grid: auto-flow / 1fr;
+  }
+  .equipo-container {
+    background-color: bisque;
+    grid: auto-flow / 1fr 1fr ;
+  }
+
+  .sedes {
+    grid: auto-flow / 1fr 1fr ;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .anfitrion {
+    max-width: 100vw;
+  }
+  .goleadores {
+    grid: auto-flow / 1fr;
+  }
+  .equipo-container {
+    background-color: bisque;
+    grid: auto-flow / 1fr;
+  }
+
+  .sedes {
+    grid: auto-flow / 1fr;
+  }
+  .podios {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .introduccion {
+    display: none;
+  }
+  .anfitrion {
+    max-width: 100vw;
+  }
+  .goleadores {
+    grid: auto-flow / 1fr;
+  }
+  .equipo-container {
+    background-color: bisque;
+    grid: auto-flow / 1fr;
+  }
+
+  .sedes {
+    grid: auto-flow / 1fr;
+  }
+  .podios {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .introduccion {
+    display: none;
+  }
+  .anfitrion {
+    max-width: 100vw;
+  }
+  .goleadores {
+    grid: auto-flow / 1fr;
+  }
+  .equipo-container {
+    background-color: bisque;
+    grid: auto-flow / 1fr;
+  }
+
+  .sedes {
+    grid: auto-flow / 1fr;
+  }
+  .podios {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,61 @@
+.menu-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: antiquewhite;
+    width: 100vw;
+    height: auto;
+    margin-top: 0;
+    background-image: url('../../../assets/final-mundial-qatar-e1663089282295.webp');
+    background-size: cover;
+    text-align: center
+}
+
+.menu-container > span{
+  font-size: 10rem;
+  padding: 1rem;
+
+}
+
+
+@media screen and (max-width: 1440px) {
+    .menu-container > span{
+        font-size: 8rem;
+        padding: 1rem;
+      
+      }
+}
+@media screen and (max-width: 960px) {
+    .menu-container > span{
+        font-size: 7rem;
+        padding: 1rem;
+      
+      }
+}
+
+@media screen and (max-width: 575px) {
+    .menu-container > span{
+        font-size: 6rem;
+        padding: 1rem;
+      
+      }
+}
+
+@media screen and (max-width: 375px) {
+  
+    .menu-container > span{
+        font-size: 3rem;
+        padding: 1rem;
+      
+      }
+}
+
+@media screen and (max-width: 320px) {
+    
+    .menu-container > span{
+        font-size: 1rem;
+        padding: 1rem;
+      
+      }
+}
+
